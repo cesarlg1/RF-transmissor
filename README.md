@@ -1,7 +1,3 @@
-// pinos que funcionam normalmente com as interupcoes externas do arduino due- sam3x8e-au      //
-//     2-3-4-5-10-11-12-13-23-24-25-26-27-28-29-30-31-33-42-43-49-51  
-
-
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
@@ -206,7 +202,7 @@ void interrupcao_9() {                                    //chamada qd acontecer
   sensor9++;                                              //soma a variavel
 }                                                          //repete todo conteudo do void loop com as outras entradas e variaveis
 
- //**************** tarefa apos estouro do timer (1 segundo)  ***********************
+ //**************** tarefa apos estouro do timer (3 segundo)  ***********************
 void myHandler(){
  sensor1_rf = sensor1/3;
  sensor1 = 0;
